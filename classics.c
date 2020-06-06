@@ -59,6 +59,7 @@ int check_prime(int n) {
 }
 
 void list_n_primes(int n) {
+    printf("list of %i primes: ");
     int i=0,j=0;
     do {
 	if (check_prime(i)==1) {
@@ -81,10 +82,10 @@ int palindrome_10(int n) {
     }
     if (s==t) {
 	printf("%d palindrome on base 10\n",t);
-	return 1;
     } else {
 	printf("%d not palindrome on base 10\n",t);
     }
+    return (s==t);
 }
 
 //Factorial
